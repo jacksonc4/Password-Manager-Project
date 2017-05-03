@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576760831EB04A3600541577 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576760811EB04A3600541577 /* KeychainItemAccessibility.swift */; };
+		576760841EB04A3600541577 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576760821EB04A3600541577 /* KeychainWrapper.swift */; };
+		576760C01EB0597600541577 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576760BD1EB0596A00541577 /* CryptoSwift.framework */; };
+		576760C11EB0597600541577 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 576760BD1EB0596A00541577 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		576760C91EB0789100541577 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576760C81EB0789100541577 /* TableViewCell.swift */; };
+		E9115E621EACFADE000EFAD2 /* lock_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E9115E611EACFADE000EFAD2 /* lock_button.png */; };
+		E92955B21EB7B34D00194A0E /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = E92955B11EB7B34D00194A0E /* edit.png */; };
+		E92955B91EB7C57000194A0E /* black_hive_alert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E92955B81EB7C57000194A0E /* black_hive_alert.jpg */; };
+		E939C3001EAAD1470031ECF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939C2FF1EAAD1470031ECF5 /* AppDelegate.swift */; };
+		E939C3021EAAD1470031ECF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939C3011EAAD1470031ECF5 /* ViewController.swift */; };
+		E939C3051EAAD1470031ECF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E939C3031EAAD1470031ECF5 /* Main.storyboard */; };
+		E939C3071EAAD1470031ECF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E939C3061EAAD1470031ECF5 /* Assets.xcassets */; };
+		E939C30A1EAAD1470031ECF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E939C3081EAAD1470031ECF5 /* LaunchScreen.storyboard */; };
+		E939C3151EAAD1470031ECF5 /* Lock_and_KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939C3141EAAD1470031ECF5 /* Lock_and_KeyTests.swift */; };
+		E939C3201EAAD1470031ECF5 /* Lock_and_KeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939C31F1EAAD1470031ECF5 /* Lock_and_KeyUITests.swift */; };
+		E939C32E1EAAD4170031ECF5 /* black_hive_canvas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E939C32D1EAAD4170031ECF5 /* black_hive_canvas.jpg */; };
+		E939C3301EAAD4D20031ECF5 /* lock_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E939C32F1EAAD4D20031ECF5 /* lock_image.png */; };
+		E939C3321EAAF4B60031ECF5 /* subviewBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E939C3311EAAF4B60031ECF5 /* subviewBackground.jpg */; };
+		E939C3341EAB062B0031ECF5 /* app_icon_40p.png in Resources */ = {isa = PBXBuildFile; fileRef = E939C3331EAB062B0031ECF5 /* app_icon_40p.png */; };
+		E939C3361EAB9CA10031ECF5 /* ManagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939C3351EAB9CA10031ECF5 /* ManagePage.swift */; };
+		E9CD01961EB18C78004F4554 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E9CD01951EB18C78004F4554 /* arrow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576760BC1EB0596A00541577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576760B71EB0596A00541577 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		576760BE1EB0596A00541577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576760B71EB0596A00541577 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = Tests;
+		};
+		576760C21EB0597600541577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576760B71EB0596A00541577 /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		E939C3111EAAD1470031ECF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E939C2F41EAAD1460031ECF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E939C2FB1EAAD1460031ECF5;
+			remoteInfo = "Lock and Key";
+		};
+		E939C31C1EAAD1470031ECF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E939C2F41EAAD1460031ECF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E939C2FB1EAAD1460031ECF5;
+			remoteInfo = "Lock and Key";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		576760B61EB054CE00541577 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				576760C11EB0597600541577 /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		576760811EB04A3600541577 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		576760821EB04A3600541577 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		576760B71EB0596A00541577 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		576760C81EB0789100541577 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+		E9115E611EACFADE000EFAD2 /* lock_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_button.png; sourceTree = "<group>"; };
+		E92955B11EB7B34D00194A0E /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		E92955B81EB7C57000194A0E /* black_hive_alert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_hive_alert.jpg; sourceTree = "<group>"; };
+		E939C2FC1EAAD1470031ECF5 /* Lock and Key.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lock and Key.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939C2FF1EAAD1470031ECF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E939C3011EAAD1470031ECF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E939C3041EAAD1470031ECF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E939C3061EAAD1470031ECF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E939C3091EAAD1470031ECF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E939C30B1EAAD1470031ECF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E939C3101EAAD1470031ECF5 /* Lock and KeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lock and KeyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939C3141EAAD1470031ECF5 /* Lock_and_KeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock_and_KeyTests.swift; sourceTree = "<group>"; };
+		E939C3161EAAD1470031ECF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E939C31B1EAAD1470031ECF5 /* Lock and KeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lock and KeyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939C31F1EAAD1470031ECF5 /* Lock_and_KeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock_and_KeyUITests.swift; sourceTree = "<group>"; };
+		E939C3211EAAD1470031ECF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E939C32D1EAAD4170031ECF5 /* black_hive_canvas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = black_hive_canvas.jpg; path = ../black_hive_canvas.jpg; sourceTree = "<group>"; };
+		E939C32F1EAAD4D20031ECF5 /* lock_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_image.png; sourceTree = "<group>"; };
+		E939C3311EAAF4B60031ECF5 /* subviewBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = subviewBackground.jpg; sourceTree = "<group>"; };
+		E939C3331EAB062B0031ECF5 /* app_icon_40p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_40p.png; sourceTree = "<group>"; };
+		E939C3351EAB9CA10031ECF5 /* ManagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagePage.swift; sourceTree = "<group>"; };
+		E9CD01951EB18C78004F4554 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E939C2F91EAAD1460031ECF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576760C01EB0597600541577 /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939C30D1EAAD1470031ECF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939C3181EAAD1470031ECF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576760B81EB0596A00541577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				576760BD1EB0596A00541577 /* CryptoSwift.framework */,
+				576760BF1EB0596A00541577 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E939C2F31EAAD1460031ECF5 = {
+			isa = PBXGroup;
+			children = (
+				576760B71EB0596A00541577 /* CryptoSwift.xcodeproj */,
+				E939C2FE1EAAD1470031ECF5 /* Lock and Key */,
+				E939C3131EAAD1470031ECF5 /* Lock and KeyTests */,
+				E939C31E1EAAD1470031ECF5 /* Lock and KeyUITests */,
+				E939C2FD1EAAD1470031ECF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E939C2FD1EAAD1470031ECF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E939C2FC1EAAD1470031ECF5 /* Lock and Key.app */,
+				E939C3101EAAD1470031ECF5 /* Lock and KeyTests.xctest */,
+				E939C31B1EAAD1470031ECF5 /* Lock and KeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E939C2FE1EAAD1470031ECF5 /* Lock and Key */ = {
+			isa = PBXGroup;
+			children = (
+				576760811EB04A3600541577 /* KeychainItemAccessibility.swift */,
+				576760821EB04A3600541577 /* KeychainWrapper.swift */,
+				E939C2FF1EAAD1470031ECF5 /* AppDelegate.swift */,
+				E939C3011EAAD1470031ECF5 /* ViewController.swift */,
+				E939C3351EAB9CA10031ECF5 /* ManagePage.swift */,
+				576760C81EB0789100541577 /* TableViewCell.swift */,
+				E939C3031EAAD1470031ECF5 /* Main.storyboard */,
+				E939C3061EAAD1470031ECF5 /* Assets.xcassets */,
+				E939C3081EAAD1470031ECF5 /* LaunchScreen.storyboard */,
+				E939C30B1EAAD1470031ECF5 /* Info.plist */,
+				E92955B81EB7C57000194A0E /* black_hive_alert.jpg */,
+				E92955B11EB7B34D00194A0E /* edit.png */,
+				E939C32F1EAAD4D20031ECF5 /* lock_image.png */,
+				E9CD01951EB18C78004F4554 /* arrow.png */,
+				E9115E611EACFADE000EFAD2 /* lock_button.png */,
+				E939C3331EAB062B0031ECF5 /* app_icon_40p.png */,
+				E939C3311EAAF4B60031ECF5 /* subviewBackground.jpg */,
+				E939C32D1EAAD4170031ECF5 /* black_hive_canvas.jpg */,
+			);
+			path = "Lock and Key";
+			sourceTree = "<group>";
+		};
+		E939C3131EAAD1470031ECF5 /* Lock and KeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E939C3141EAAD1470031ECF5 /* Lock_and_KeyTests.swift */,
+				E939C3161EAAD1470031ECF5 /* Info.plist */,
+			);
+			path = "Lock and KeyTests";
+			sourceTree = "<group>";
+		};
+		E939C31E1EAAD1470031ECF5 /* Lock and KeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E939C31F1EAAD1470031ECF5 /* Lock_and_KeyUITests.swift */,
+				E939C3211EAAD1470031ECF5 /* Info.plist */,
+			);
+			path = "Lock and KeyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E939C2FB1EAAD1460031ECF5 /* Lock and Key */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E939C3241EAAD1470031ECF5 /* Build configuration list for PBXNativeTarget "Lock and Key" */;
+			buildPhases = (
+				E939C2F81EAAD1460031ECF5 /* Sources */,
+				E939C2F91EAAD1460031ECF5 /* Frameworks */,
+				E939C2FA1EAAD1460031ECF5 /* Resources */,
+				576760B61EB054CE00541577 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576760C31EB0597600541577 /* PBXTargetDependency */,
+			);
+			name = "Lock and Key";
+			productName = "Lock and Key";
+			productReference = E939C2FC1EAAD1470031ECF5 /* Lock and Key.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E939C30F1EAAD1470031ECF5 /* Lock and KeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E939C3271EAAD1470031ECF5 /* Build configuration list for PBXNativeTarget "Lock and KeyTests" */;
+			buildPhases = (
+				E939C30C1EAAD1470031ECF5 /* Sources */,
+				E939C30D1EAAD1470031ECF5 /* Frameworks */,
+				E939C30E1EAAD1470031ECF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E939C3121EAAD1470031ECF5 /* PBXTargetDependency */,
+			);
+			name = "Lock and KeyTests";
+			productName = "Lock and KeyTests";
+			productReference = E939C3101EAAD1470031ECF5 /* Lock and KeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E939C31A1EAAD1470031ECF5 /* Lock and KeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E939C32A1EAAD1470031ECF5 /* Build configuration list for PBXNativeTarget "Lock and KeyUITests" */;
+			buildPhases = (
+				E939C3171EAAD1470031ECF5 /* Sources */,
+				E939C3181EAAD1470031ECF5 /* Frameworks */,
+				E939C3191EAAD1470031ECF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E939C31D1EAAD1470031ECF5 /* PBXTargetDependency */,
+			);
+			name = "Lock and KeyUITests";
+			productName = "Lock and KeyUITests";
+			productReference = E939C31B1EAAD1470031ECF5 /* Lock and KeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E939C2F41EAAD1460031ECF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Cybersecurity Project";
+				TargetAttributes = {
+					E939C2FB1EAAD1460031ECF5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8B4QBLLSCD;
+						ProvisioningStyle = Automatic;
+					};
+					E939C30F1EAAD1470031ECF5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8B4QBLLSCD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E939C2FB1EAAD1460031ECF5;
+					};
+					E939C31A1EAAD1470031ECF5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8B4QBLLSCD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E939C2FB1EAAD1460031ECF5;
+					};
+				};
+			};
+			buildConfigurationList = E939C2F71EAAD1460031ECF5 /* Build configuration list for PBXProject "Lock and Key" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E939C2F31EAAD1460031ECF5;
+			productRefGroup = E939C2FD1EAAD1470031ECF5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 576760B81EB0596A00541577 /* Products */;
+					ProjectRef = 576760B71EB0596A00541577 /* CryptoSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E939C2FB1EAAD1460031ECF5 /* Lock and Key */,
+				E939C30F1EAAD1470031ECF5 /* Lock and KeyTests */,
+				E939C31A1EAAD1470031ECF5 /* Lock and KeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		576760BD1EB0596A00541577 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 576760BC1EB0596A00541577 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		576760BF1EB0596A00541577 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 576760BE1EB0596A00541577 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E939C2FA1EAAD1460031ECF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939C3301EAAD4D20031ECF5 /* lock_image.png in Resources */,
+				E92955B21EB7B34D00194A0E /* edit.png in Resources */,
+				E939C3321EAAF4B60031ECF5 /* subviewBackground.jpg in Resources */,
+				E939C30A1EAAD1470031ECF5 /* LaunchScreen.storyboard in Resources */,
+				E939C3071EAAD1470031ECF5 /* Assets.xcassets in Resources */,
+				E9CD01961EB18C78004F4554 /* arrow.png in Resources */,
+				E939C3341EAB062B0031ECF5 /* app_icon_40p.png in Resources */,
+				E939C3051EAAD1470031ECF5 /* Main.storyboard in Resources */,
+				E9115E621EACFADE000EFAD2 /* lock_button.png in Resources */,
+				E939C32E1EAAD4170031ECF5 /* black_hive_canvas.jpg in Resources */,
+				E92955B91EB7C57000194A0E /* black_hive_alert.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939C30E1EAAD1470031ECF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939C3191EAAD1470031ECF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E939C2F81EAAD1460031ECF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939C3021EAAD1470031ECF5 /* ViewController.swift in Sources */,
+				576760831EB04A3600541577 /* KeychainItemAccessibility.swift in Sources */,
+				E939C3001EAAD1470031ECF5 /* AppDelegate.swift in Sources */,
+				576760C91EB0789100541577 /* TableViewCell.swift in Sources */,
+				E939C3361EAB9CA10031ECF5 /* ManagePage.swift in Sources */,
+				576760841EB04A3600541577 /* KeychainWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939C30C1EAAD1470031ECF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939C3151EAAD1470031ECF5 /* Lock_and_KeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939C3171EAAD1470031ECF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939C3201EAAD1470031ECF5 /* Lock_and_KeyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576760C31EB0597600541577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = 576760C21EB0597600541577 /* PBXContainerItemProxy */;
+		};
+		E939C3121EAAD1470031ECF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E939C2FB1EAAD1460031ECF5 /* Lock and Key */;
+			targetProxy = E939C3111EAAD1470031ECF5 /* PBXContainerItemProxy */;
+		};
+		E939C31D1EAAD1470031ECF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E939C2FB1EAAD1460031ECF5 /* Lock and Key */;
+			targetProxy = E939C31C1EAAD1470031ECF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E939C3031EAAD1470031ECF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E939C3041EAAD1470031ECF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E939C3081EAAD1470031ECF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E939C3091EAAD1470031ECF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E939C3221EAAD1470031ECF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E939C3231EAAD1470031ECF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E939C3251EAAD1470031ECF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				INFOPLIST_FILE = "Lock and Key/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackson.Lock-and-Key";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E939C3261EAAD1470031ECF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				INFOPLIST_FILE = "Lock and Key/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackson.Lock-and-Key";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E939C3281EAAD1470031ECF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				INFOPLIST_FILE = "Lock and KeyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackson.Lock-and-KeyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lock and Key.app/Lock and Key";
+			};
+			name = Debug;
+		};
+		E939C3291EAAD1470031ECF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				INFOPLIST_FILE = "Lock and KeyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackson.Lock-and-KeyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lock and Key.app/Lock and Key";
+			};
+			name = Release;
+		};
+		E939C32B1EAAD1470031ECF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				INFOPLIST_FILE = "Lock and KeyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackson.Lock-and-KeyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Lock and Key";
+			};
+			name = Debug;
+		};
+		E939C32C1EAAD1470031ECF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				INFOPLIST_FILE = "Lock and KeyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackson.Lock-and-KeyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Lock and Key";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E939C2F71EAAD1460031ECF5 /* Build configuration list for PBXProject "Lock and Key" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939C3221EAAD1470031ECF5 /* Debug */,
+				E939C3231EAAD1470031ECF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E939C3241EAAD1470031ECF5 /* Build configuration list for PBXNativeTarget "Lock and Key" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939C3251EAAD1470031ECF5 /* Debug */,
+				E939C3261EAAD1470031ECF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E939C3271EAAD1470031ECF5 /* Build configuration list for PBXNativeTarget "Lock and KeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939C3281EAAD1470031ECF5 /* Debug */,
+				E939C3291EAAD1470031ECF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E939C32A1EAAD1470031ECF5 /* Build configuration list for PBXNativeTarget "Lock and KeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939C32B1EAAD1470031ECF5 /* Debug */,
+				E939C32C1EAAD1470031ECF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E939C2F41EAAD1460031ECF5 /* Project object */;
+}
