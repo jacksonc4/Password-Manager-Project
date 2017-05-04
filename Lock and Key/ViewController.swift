@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         
         if UserDefaults.standard.bool(forKey: "isRegistered") == false {
             // Remove previous KeychainWrapper keys if present
-            KeychainWrapper.standard.removeAllKeys()
+            let _ = KeychainWrapper.standard.removeAllKeys()
             animateInRegister()
         } else {
             animateIn()
@@ -109,8 +109,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        print(UserDefaults.standard.array(forKey: "accounts") as? [Array<UInt8>])
-        print(KeychainWrapper.standard.allKeys())
         
         if isLoggedIn == true {
             
@@ -284,10 +282,16 @@ class ViewController: UIViewController {
         
         if (loginUserName.text != "") && (loginPassword.text != "") {
 
-            let hash = Array(loginUserName.text!.utf8).sha512().toBase64()
-                
-            if UserDefaults.standard.string(forKey: "username") == hash! &&
-                KeychainWrapper.standard.string(forKey: loginUserName.text!) == loginPassword.text! {
+            let usernamehash = Array(loginUserName.text!.utf8).sha512().toBase64()
+            print("Username field hash: \(usernamehash!)")
+            let passwordhash = Array(loginPassword.text!.utf8).sha512().toBase64()
+            print("Password field hash: \(passwordhash!)")
+            
+            print("Stored username hash: \(UserDefaults.standard.string(forKey: "username")!)")
+            print("Stored password hash: \(UserDefaults.standard.string(forKey: "password")!)")
+            
+            if UserDefaults.standard.string(forKey: "username") == usernamehash! &&
+                UserDefaults.standard.string(forKey: "password") == passwordhash!  {
                     animateOut()
                     isLoggedIn = true
             } else {
@@ -312,12 +316,13 @@ class ViewController: UIViewController {
         if (registerUserName.text != "") && (registerPassword.text != "") {
             UserDefaults.standard.set(true, forKey: "isRegistered")
             
-            let hash = Array(registerUserName.text!.utf8).sha512().toBase64()
+            let usernamehash = Array(registerUserName.text!.utf8).sha512().toBase64()
+            let passwordhash = Array(registerPassword.text!.utf8).sha512().toBase64()
             
             // Save username hash to userdefaults
-            UserDefaults.standard.set(hash!, forKey: "username")
+            UserDefaults.standard.set(usernamehash!, forKey: "username")
                 
-            let savePassword: Bool = KeychainWrapper.standard.set(registerPassword.text!, forKey: registerUserName.text!)
+            UserDefaults.standard.set(passwordhash!, forKey: "password")
             
             // Generate random 32-byte alphanumeric key
             let key = randomString(length: 32)
@@ -396,7 +401,7 @@ class ViewController: UIViewController {
     
     @IBAction func showHashedMasterCred(_ sender: UIButton) {
         //Prints hashed master credentials
-        let hashedCredentialsPopUp = UIAlertController(title: "Master Key Hash:", message: "\("Hashed Username: " + (UserDefaults.standard.string(forKey: "username"))!)\n\nHashed Password: <put password hash here>", preferredStyle: .alert)
+        let hashedCredentialsPopUp = UIAlertController(title: "Master Key Hash:", message: "\("Hashed Username: " + (UserDefaults.standard.string(forKey: "username"))!)\n\nHashed Password: \(UserDefaults.standard.string(forKey: "password")!)", preferredStyle: .alert)
         let seen = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
             hashedCredentialsPopUp.addAction(seen)
             present(hashedCredentialsPopUp, animated: true, completion: nil)
@@ -408,7 +413,15 @@ class ViewController: UIViewController {
         
         if (userNameField.text != "") && (passwordField.text != "") {
             
-            if KeychainWrapper.standard.allKeys().contains(userNameField.text!) {
+            if (userNameField.text == "key" || userNameField.text == "iv"){
+                
+                let reservedKey = UIAlertController(title: "Invalid Input", message: "This key is reserved.", preferredStyle: .alert)
+                let myAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                reservedKey.addAction(myAction)
+                present(reservedKey, animated: true, completion: nil)
+                
+                
+            } else if KeychainWrapper.standard.allKeys().contains(userNameField.text!) {
                 let exists = UIAlertController(title: "Username already exists!", message: "Please choose another username.", preferredStyle: .alert)
                 let myAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
                 exists.addAction(myAction)
@@ -446,7 +459,7 @@ class ViewController: UIViewController {
                 fieldsEmpty.addAction(myAction)
                 present(fieldsEmpty, animated: true, completion: nil)
         }
-        print(UserDefaults.standard.array(forKey: "accounts") as? [Array<UInt8>])
+        print(UserDefaults.standard.array(forKey: "accounts") as! [Array<UInt8>])
     }
     
     override func didReceiveMemoryWarning() {
