@@ -207,14 +207,14 @@ class ViewController: UIViewController {
             
         }) {(success: Bool) in
             self.loginPopupView.removeFromSuperview()
-            self.visualEffect.removeFromSuperview()
+            self.visualEffect.isHidden = true
             
             UIView.animate(withDuration: 0.75, animations: {
                 
                 self.navigationItem.title = "Lock and Key"
                 self.openManageButton.title = "Manage"
                     self.openManageButton.isEnabled = true
-                self.logOut.title = "Logout"
+                self.logOut.title = "Log Out"
                     self.logOut.isEnabled = true
                 
                 self.background.alpha = 0
@@ -250,7 +250,7 @@ class ViewController: UIViewController {
             
         }) {(success: Bool) in
             self.registerPopupView.removeFromSuperview()
-            self.visualEffect.removeFromSuperview()
+            self.visualEffect.isHidden = true
             
             UIView.animate(withDuration: 0.75, animations: {
                 
@@ -384,6 +384,13 @@ class ViewController: UIViewController {
     
     @IBAction func logOut(_ sender: UIBarButtonItem) {
         isLoggedIn = false
+        viewDidLoad()
+        self.loginUserName.text = ""
+        self.loginPassword.text = ""
+        self.logOut.title = ""
+            self.logOut.isEnabled = false
+        self.openManageButton.title = ""
+            self.openManageButton.isEnabled = false
         
     }
     
